@@ -35,8 +35,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-04T09:14:57Z"
+    "userPermissions": []
   },
   "id": "Home Page_getIdAppCount",
   "deleted": false,

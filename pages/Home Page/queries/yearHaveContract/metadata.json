@@ -35,8 +35,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-05T01:19:28Z"
+    "userPermissions": []
   },
   "id": "Home Page_yearHaveContract",
   "deleted": false,

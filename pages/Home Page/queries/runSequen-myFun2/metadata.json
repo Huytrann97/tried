@@ -36,8 +36,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-06T01:57:07Z"
+    "userPermissions": []
   },
   "id": "Home Page_runSequen.myFun2",
   "deleted": false,

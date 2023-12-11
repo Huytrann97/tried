@@ -35,8 +35,7 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-12-05T01:55:28Z"
+    "userPermissions": []
   },
   "id": "Admin_updateAppCode",
   "deleted": false,
