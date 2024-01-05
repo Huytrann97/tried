@@ -1,0 +1,7 @@
+SELECT * FROM (
+    SELECT * FROM public.billings 
+    WHERE agency_id = 1 
+    ORDER BY TO_DATE(month, 'YYYY-MM') DESC 
+    LIMIT 3
+) AS recent_records
+ORDER BY TO_DATE(recent_records.month, 'YYYY-MM') ASC;

@@ -1,0 +1,11 @@
+SELECT
+    DATE_TRUNC('month', o.created) AS month,
+    SUM(o.total) AS total
+FROM
+    "order" o
+WHERE
+    o.created >= '{{dat_startDate.formattedDate}}' AND o.created <= '{{dat_endDate.formattedDate}}'
+GROUP BY
+    month
+ORDER BY
+    month;

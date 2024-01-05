@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "localStorage",
+    "pageId": "token",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "token_localStorage",
+  "deleted": false,
+  "gitSyncId": "6576712df8a56c497a59d35a_657bdd82922ced29555f239c"
+}

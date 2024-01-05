@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "chart_data",
+    "pageId": "Custom_Chart",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "option",
+        "value": "{\n  tooltip: {\n    trigger: 'axis',\n    axisPointer: {\n      type: 'shadow'\n    }\n  },\n  legend: {},\n  grid: {\n    left: '3%',\n    right: '4%',\n    bottom: '3%',\n    containLabel: true\n  },\n  xAxis: [{\n    type: 'category',\n    data: chart_data.fetchData().month\n  }],\n  yAxis: [{\n    type: 'value',\n    name: ' Number of applications ',\n    interval: 300,\n    axisLabel: {\n      formatter: '{value} '\n    }\n  }, {\n    type: 'value',\n    name: 'Commission Fee',\n    interval: 20,\n    axisLabel: {\n      formatter: '{value}  万円'\n    }\n  }],\n  series: [{\n    name: 'Wifi',\n    type: 'bar',\n    stack: 'Ad',\n    emphasis: {\n      focus: 'series'\n    },\n    data: chart_data.fetchData().wifi_count\n  }, {\n    name: 'Card',\n    type: 'bar',\n    stack: 'Ad',\n    emphasis: {\n      focus: 'series'\n    },\n    data: chart_data.fetchData().card_count\n  }, {\n    name: 'Ultility',\n    type: 'bar',\n    stack: 'Ad',\n    emphasis: {\n      focus: 'series'\n    },\n    data: chart_data.fetchData().utility_count\n  }, {\n    name: 'Total amount',\n    type: 'bar',\n    yAxisIndex: 1,\n    data: chart_data.fetchData().amount\n  }]\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Custom_Chart_chart_data",
+  "deleted": false,
+  "gitSyncId": "6576712df8a56c497a59d35a_6597b45e21e083222a47e380"
+}

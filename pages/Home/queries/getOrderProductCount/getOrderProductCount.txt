@@ -1,0 +1,17 @@
+SELECT
+    p.name AS product_name,
+    SUM(ol.quantity) AS total_sales_qty
+FROM
+    order_line ol
+JOIN
+    product_variant pv ON ol.product_variant_id = pv.id
+JOIN
+    product p ON pv.product_id = p.id
+JOIN
+    "order" o ON ol.order_id = o.id
+WHERE
+    o.created >= '{{dat_startDate.formattedDate}}' AND o.created <= '{{dat_endDate.formattedDate}}'
+GROUP BY
+    p.name
+ORDER BY
+    total_sales_qty DESC;

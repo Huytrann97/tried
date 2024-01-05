@@ -1,3 +1,2 @@
 SELECT *
-FROM contracts
-LIMIT 10;
+FROM contracts;

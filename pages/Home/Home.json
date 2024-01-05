@@ -1,0 +1,77 @@
+{
+  "unpublishedPage": {
+    "name": "Home",
+    "slug": "home",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1590,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_functions.orderStatusCount",
+              "name": "functions.orderStatusCount",
+              "collectionId": "Home_functions",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const orders = await getOrders.run();\n  const allOrders = orders.length;\n  const fulfilledOrders = orders.filter(o => o.status === 'DELIVERED').length;\n  const unfulfilledOrders = orders.filter(o => o.status === 'UNFULFILLED').length;\n  const cancelledOrders = orders.filter(o => o.status === 'CANCELLED').length;\n  const shippedOrders = orders.filter(o => o.status === 'SHIPPED').length;\n  const packedOrders = orders.filter(o => o.status === 'PACKED').length;\n  return {\n    allOrders,\n    fulfilledOrders,\n    unfulfilledOrders,\n    cancelledOrders,\n    shippedOrders,\n    packedOrders\n  };\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getOrderProductCount",
+              "name": "getOrderProductCount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "dat_endDate.formattedDate",
+                "dat_startDate.formattedDate"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getOrders",
+              "name": "getOrders",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6576712df8a56c497a59d35a_65978b758a860156ddebe4e9"
+}

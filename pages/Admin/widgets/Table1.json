@@ -91,7 +91,7 @@
         {"key": "primaryColumns.EditActions1.isDiscardDisabled"}
     ],
     "displayName": "Table",
-    "bottomRow": 72,
+    "bottomRow": 49,
     "columnWidthMap": {
         "application_code": 152,
         "id": 60
